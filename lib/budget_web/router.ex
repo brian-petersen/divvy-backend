@@ -7,5 +7,7 @@ defmodule BudgetWeb.Router do
 
   scope "/api", BudgetWeb do
     pipe_through :api
+
+    resources "/categories", CategoryController, except: [:new, :edit]
   end
 end
