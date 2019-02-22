@@ -9,5 +9,6 @@ defmodule BudgetWeb.Router do
     pipe_through :api
 
     resources "/categories", CategoryController, except: [:new, :edit]
+    resources "/transactions", TransactionController, except: [:new, :edit]
   end
 end
